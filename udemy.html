@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+
+
+
+<style>
+
+.form-inline{
+    display: flex;
+}
+.img1{
+    height: 65px;
+    width: 150px;
+    margin-left: 20px;
+}
+.collapse{
+    justify-content: end;
+}
+.collapse li{
+    padding-right:20px ;
+}
+
+
+.body1{
+    height: 400px;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+.body1 img{
+    /* width: fit-content; */
+    height: 400px;
+}
+
+.body2{
+    height: 900px;
+    /* border: 2px solid  blue; */
+}
+.header2{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.header3 h4{
+    text-align: center;
+   
+    margin-top: 40px;
+
+}
+.list1 ul li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+    
+}
+
+.list1 ul li a{
+    text-decoration: none;
+}
+.list1 ul{
+    display: flex;
+    /* text-dec
+    oration: none; */
+}
+.l1{
+    color: black;
+}
+
+.list3 ul li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 800;
+    
+    
+    
+    
+}
+.list3{
+    display: flex;
+    color: blueviolet;
+    justify-content: space-evenly;
+}
+
+
+
+.cards{
+    justify-content: space-evenly;
+    display: flex;
+    /* margin-left: 30px; */
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+
+.cards4{
+    justify-content: space-evenly;
+    display: flex;
+    /* margin-left: 30px; */
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+.cards4 .card {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+
+.card{
+    margin-left: 20px;
+}
+.card img{
+    height: 240px;
+    width: 286px;
+}
+.information1
+{
+    margin-left:50px ;
+    margin-top:40px;
+    width: 70%;
+}
+
+.form-control{
+    border-radius: 10px;
+}
+
+
+.infomation2
+{  
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.body3{
+    background-color: gainsboro;
+    height: 460px;
+    /* border: 2px solid  green; */
+}
+.body6{
+    height: 700px;
+    /* border: 2px solid red; */
+}
+
+.body4{
+    
+    height: 500px;
+    /* border: 2px solid  blue; */
+}
+.body5{
+    height: 500px;
+    background-color: gainsboro;
+}
+
+.cards2{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 30px;
+    justify-content: space-evenly;
+}
+
+.cards2 .card img{
+    height: 340px;
+    width: 290px;
+}
+
+.cards3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.cards4 .card img{
+    flex-wrap: wrap;
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width:1490px) {
+    .body6{
+        height: 1300px;
+    }
+    
+}
+
+</style>
+<body>
+    <div class="main1">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <img class =" img1" src="https://cdn.cookielaw.org/logos/c7d0d27d-e055-4572-8927-d3c994df5f60/3275d2bc-df67-4c87-81ed-bdfb982b90c2/a3df5d54-4eba-4aeb-9fb3-189c22118d8c/udemy-logo.png" alt="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Categories <span class="sr-only"></span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><strong>    Teach On Udemy            </strong> <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"> Login</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Courses" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search </button>
+    </form>
+  </div>
+</nav>
+
+
+
+    </div>
+
+
+
+    <div class="body1">
+        <!-- <img src="https://myelearningworld.com/wp-content/uploads/2022/06/udemy-review.jpg" alt=""> -->
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkVWXmnuGYD8OtO3xQmTuUv49pS31ophuBWA&usqp=CAU" alt=""> -->
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-mWpCG3oIPJzYVLBvb0AjgZO2iY2NavsOUg&usqp=CAU" alt=""> -->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="MicrosoftTeams-image(1).png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="MicrosoftTeams-image.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="MicrosoftTeams-image(1).png"alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        
+    </div>
+    <div class="body2">
+
+        <div class="header2">
+            <H3>A broad Selection of Courses</H3>
+            <h4>Choose from 231000 online video courses with new additions published every month</h4>
+        </div>
+ 
+        <div class="list1">
+<ul>
+    <li><a href="">Python</a>  </li>
+    <li><a href="">Excel</a> </li>
+    <li><a href="">Web Development</a> </li>
+    <li><a href="">Java Script</a> </li>
+    <li><a href="">Data science </a></li>
+    <li><a href="">AWS Certification</a> </li>
+    <li><a href=""> Drawing</a> </li>
+</ul>
+        </div>
+
+<div class="information1">
+    <h4>Expand your Career opportunities with Python</H1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt consectetur totam blanditiis dolores impedit sit et praesentium unde expedita nam neque doloremque quisquam assumenda, vitae est minus quis maxime, modi esse libero ea sed veritatis cumque odio. Nam, eligendi voluptatum.</p>
+<button type="button" class="btn btn-light">Expore Python</button>
+</div>
+
+       <div class="cards">
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIREA8QEBATFRAVEQ8VEA8XFRUQFQ8RFhIWFxURFRUYHSggGBolGxgVJTEhJSkrLi8uFx8zODMsOCgtLisBCgoKDg0OGxAQGi8lICYtMCstLS0tLS0tLzUtLi0tNS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS8tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUBAwYHAgj/xABQEAABAwEBCgkHBQ4FBQAAAAABAAIDBBEFBhIhMUFRYXGRExQiUlOBkqHRBxUWMrGywSM0QlRyM0NiY3OCk6KjwtLh4vA1dJSz8RclVdPj/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAIDAQQFBv/EAD0RAAIBAgIFCQYDBwUAAAAAAAABAgMRBCESMUFRcQUTMmGBkaGx8BQiUsHR4TNC8QYVFjRyotIjJESCsv/aAAwDAQACEQMRAD8A9xREQBERAEREAREQBFqmlaxpc9wa0AlziQ0NAykk5AvP74fKjBESyjZw78nCutZEDq+k/qsGgqUYuTsiMpKOs9FVfX3Zpqf7vUwxnQ+RrSdgJtK8IuxflXVNvCVL2s6OM8CwDRycbh9olU8FG9/qRuNucDEevIr1hntZQ8RuR7jU+Ue5rCQJ3PI5sUpHU4tAO9QX+VWhGRlQdYjZ8XheUx3EmOUNG13hatouBJz2freCs9ngQ9okerxeVC55ymZu2In3SVaUd+9zpfVrIxqktg/3AF4i64MuZzD1kfBR5blTN+9kjUQ7uGNYeHiFiJH6Uhla8BzHBzTkcCHA7CFsX5jpKuandbFJJE/FbgOdGTtsst2FdrcHyoVURDaponjzvAEcoGm0cl2wgbVVLDtanctjXT1ns6KpuDfBT1rOEp5A6yzDYeS+MnM5uUZ8eQ2YiVbKi1tZenfUEREAREQBERAEREAREQBERAEREAREQBRLoVkcEUk0rg2NjS57jmA9p1Z1LXmHlpuk4MpaVp5Ly+WXXgWBjTpFpcdrQpQjpSsQnLRjc46/G/Ca6DyCSylB+Tp7ctmR8lnrO1ZBmzk11z7ivkAc7kMzW+s4ah8St97tzxITI8WtaQGjMXZbTsxb1396tzWz1IEgtaxpe5vOsIAadVp7l0PdhHqRo5zlbac7QXvWNw46eR46TAdJ122WDqX294GU9WfcvaALMQyZhoXD+Ua5LODbVNaBIHhshGLDaRicdJBsFug6gqqeI0paLViypQ0Y3TucS6pbrK+eNjmlR8FMFbVkatzfxoaCtrZ2nPvxKFgpgpYzcmyQteLHAOGsWqprbgg2mI2HmnGDsOUKU0kZDYpkE9uI5dOlRaJJnK0FbNSTtlicY5mHeM7XD6TTo/kverz74mV9M2ZowZAcGaLo5Bo0tOUHQdIK8fvhog6PhAOUzKdLbcY6su9TfJNdMw3QbFbyKhjmOGbDY0vY7qsePz1r1oaUb7UbFGejK289xREWkbgREQBERAEREAREQBERAEREAREQBePeWn53Tf5c/wC4V7CvHfLV87pv8uf9xytodMqrdBlTesPkHflHe61dFcG6opaoSOt4MtwJLMZDSQcIDPYQOq1c/eoPkD+Ud7rVZS02EbbVv2TVmaV2ndHrsFVHIzDY9rmc4EEb1wt/l3Y5WtpoXBwDg6VwxttANjAc+W07BrXMmh1jcnE9fcqadCMZXuWTrylG1iDYsWKfxPX3LHE9fcti6KLMg2LFincT19y0PjsJCJ3FjTgrMY5Tdo9q+8FGNxjaPajBuukPkZvycnulUl4p/wC5UP5Yewq+umPkJvyUnulUF4v+JUP5dvsKql0WWx6S4n6IREXOOgEREAREQBERAEREAREQBaZ5msa573NaxoJc9xDWtAykk4gF9SPDQXOIAAJJOIADKScwXhN/d976+UsYSKRjvkmZOFI+/PGc6Acg12qdOm5shOagjvLq+VKjiJbCyScj6YAjjt1OdjO0NsVR/wBYDmueP9T/APJcTcu9ySZoe4iNhyEi1zhpDdG1WfoizpndkLbVCC2Gq60950f/AFgd/wCPH+oP/pXH35XzG6M0cph4LAjwMHhOFt5Rdbbgtsy5FN9EWdK/shPRJnSu7IUo0oRd0vMi6kmrN+RVXJu5wEZZweFyi63CwcoAsssOhTPSs9B+0/pUn0SZ0ruyE9EmdK7shTuRI3pX+I/af0p6V/iP2n9Kk+iTOld2QseiTOmd2R4pcEf0q/EftP6U9KvxH7T+lSPRJvTO7I8Vj0Sb0zuyPFLgtrnVPCxMkwcHCt5NttljiMvUtM7eU7apdz6Pgo2Rg24NuOyy20k/FR528p21YTMM04KMGMbR7ViaVrPWNmrOepV0taXOAbibaNpxqdrkG0iyuvUDgpWt5jwT+acSpLxf8Sofy7fYVPrPucn2H+6VUXrVPBVlNKBbgPBwbbLcRxWquo1GDb2J+RbC7kuK8z9IIuJ9OXfV29s/wp6cu+rt7Z/hXnf3thPj8JfQ6/s1Tcdsi4n05d9Xb2z/AAqTTX7MJskhLRpDg/rIIClHlTCSdlPvTXi1Yw8PUWw61FFoq2OZuHE8Obnsyg6CMoO1SlvJpq6KWrBERZAREQBERAcB5XLtmGlbSsNj6gkP1QNswx+cS1usFy8yvYuYJpbXC2NlhcMznfRb7T1a1M8od1eM3QqHA2sjPAx7IyQ7e8vOwhX17NFwVMy0cp/Ld+dkHZsW/SjoxRo1JaUmTpX2eC0cYOgL7nNrtmJabFaVM++HOgJw50BRaiqYz1jj5oxncq6a6rj6gAGk4z4KSi2RcrF1w50Ban17Rlc3eudlnc71nE6rcW5a1LmyPOHQuuwzSNzl8+emf2CufWCnNoxzjOgN2maDuXwbut5p7vFUSwnNozpsuX3eOaMdZUCe6EjyTbZbmGLvyqKVhZ0UjDk2CVmP1m7R7Vgr6i9Zu0e1ZZgsKz7nJ9h/ulUFxvu8H2wr+r+5yfYf7pVBcb7vB9sLTxP4M/6X5G1R6ceK8z0C5VKJZo43EgOJtIyixpOfYum9Eoukf+r4Kgvb+dQ7Xe45d882C1eAwlOEqblJXPRVZNSyKD0Ri6R/6vgoVbem4AmKTC/AcMEnYcnsXUcKdS+2Pt2q7m6E8rENOazueeUVXLTS4TSWvabHNORwzsI0L0m5V0G1EbZWZ8Tm52OGVp/vQuYvuuaHM4w0cptgk/CbkB2g9x1KJeTX8HOYieRKMWpzRaD1i0blfgK0sNX5mT92Wri/vkyNaKqQ01rR6AiIvSGiEREAVfd2u4vTVM/RwyPA0ua0kDrNgVguQ8qk5ZcuoAON7oGdRlaSNwKlFXkkRk7Js8SubTGWaKMknDe0OOci21xt02Wr1F+IHVkXB3lRYVWDzY5Hexv7y7O61Y2JmPG4nE3T4BdB5uxoalcjzSNaMJxsGn+8qpqy6jnYmclun6R8FFqql0htcdgzDYtK2IwSNeU2wURFMgYKwsrdHSuOXENfgsMyiOsFT20jc9p7l98WZo7z4qOkZ0WVqwrLizOb3nxTirOb3nxTSRmxWlYVkaVnN7z4rHFWc3vPisaRmxXFSKOK04RyDJrKkimZze8pUTtjba42DMM51ALDkZSzNN158GJwzu5I68vcqy9+EuqGaG2uPULB3kKLW1RldhHJka3QPFdRcKg4KO1w+UdYXfgjM3+9K5HK+LWHw0t8rxXas32LPjZbTfwVF1Kq3LN+uJ1d6UOFVNOZjXuO7B/eXbzZFSXoUGBEZXDlSWWamDJvxncrqY5l5ajT5vD57fn9jrzleZpsWQsoq9EybZYg9rmu9VzSDsIsXmwLoZbfpxyfrMd4helRZFwl9EGBVSaHYLh1jH3grONT5uNRa0/XiZovNo9JikDmtcMjgCDqItC2KovWnw6SA5w0t7BLR3AK3XqKc1OKmtqT7znyVm0ERFMwFw/lgP8A24f5iG3c5dwuM8rMVty5TzZKd2+QN/eU6fTXEhU6DPK7z6gRzSustPAuDRrL2ZdysbpyF1jnG0km0qjvfdZMdbHDvB+Cuq4ckbfgurT13OZUewhlYWSsK4oCy1pJsGVYU6lhwRacp7hoUW7EkriCnDcZxnTo2LVWXQZHiJtdzRl69CjXWungfJsPK+k7m6hrVRSUr5XYLBacpJyDW4qipUjCLlJ2S1t6i+EHKyRKmu1IfVAaO0d58Fo85zdIdzfBX1He9G3HIS86MbWjdjO9TfNsPRM3FcGr+0WFhK0VKXWkkvFp+B0YcmVGruy9dWRyfnKbpDub4J5ym6Q7h4LrPNsPRM3J5th6Jm4qn+JsP8Ev7f8AIl+65714nJ+cpekO4eCecpekO4eC6zzbD0TNxTzbD0TNxT+JsN8E/wC3/Iz+65714nJm6MvSHcPBamNfI6wYT3na4/8AC7LzdD0LOyFLpKS3kRR/msbZ3BQn+0tNq1Km2+tpeV2/DiSjyXK/vSVur75dpS3HuLwZEklhf9FuUM16z7F2V7txTO/CcCIWnlHnnmD4qdcm9VxIdUHBb0QPKP2iMnVj2LrI42saGtADQLA0YgBoC5nN1sVU57E92rw2Jd+/bfbThSjoUu8ybANWYfBaCvtxtWLFbUekzCyPmxLF9WJYqtEzc+oc65O/iOyWF2lhHZdb+8upEoBIGX2Ll79PvB1y/uKvEzToOKz/AFJU179y2vDltp3t5sps2FrfjaunXI+T48icfhR+w+C65dzk6WlhYPq8m0atf8RhERbpUFRX70vC3OrWAWngJHNGlzBhtG9oV6vh7AQQRaCCCNIOUInZ3MNXyPzRcqTBmjOk2doWfFdNUttYd65eupTTzywn1opXstOcseQD12WrqmODmgjI4A9RC60GcuaK0rCy4WEjQsLYNc2UrLXDQMZUi6NVwcZdnyN+0f7t6ligGJx2BVl8UnKYzQC7ebPgqZstgiBSU7ppAwZSSS447BncV21zLn4OBDC0kk2AZ3u5xVPetTgMfJnc7BH2R/O3cF6XeRQDBfORjJLGamj1iNpxdS8byrWli8X7LF2hHXxtm+zorc89Z38HTVKlzr1s23NvTjaAZzhvztBLWt1YsZVs25FOPvEfYafaFMeV8LMadKn7sYk3KUs2yP5qp/q8fYb4J5qp/q8fYb4KQilePwmM95H81U/1ePsN8E800/QR9hvgtzngZTZ1rQ6taM9uz+arnWpQ6VlxMqM3qPoXKp+gj7DfBSI42tFjQGjQAAO5QXV+hvevg1x0e1UPlHDrU/B/QnzE3rLEvXwSoPHXaPb4rBrXaO7+aqlyhRe3wZJUZE6xZsVcat+nuC1vkJym1Uyx9NdFN9y+bfgSVF7SfJM0ZT1DGo0tUTkxBR0WnVxlSeSyXV9S2NJIkUufqVDfm7HANUh34PgV0FMMW1cjfVNhVBHMa1vX6x9vcp9HDpet5FZzOgvAZ8lM7S9o3Nt+K6xUN5cGBSMOd7nu78EdzQr5erwEdHDQT3LxzOfWd6j4hERbZWEREB4j5WrlcDX8MByKhgeDm4RgDHjdgH84qruDU4UeAcrO9pyeG5ev38XvCvpHRCwTNOHA44gJADySdDgSOsHMvBWOkglNoLZGOLXscLCCDY5jgt+hUvHgaNeFmdHVwG3CA2j4qGVKpLpxyAcoNdnaTZuOdTMMaRvW2pZGo45keh9U7fgFTXwfdR9hvtKv8MaRvXP3fPyo+w32lQmTgXl7vzdn2n+8vWL1m2UcGx53vcvJ73Pm7PtP9q9bvY+ZwbHe+5eKpq/KNf8A7f8ApHof+PDgvInOGNYsX3IQLSTYNKrKmvJxMxDTp8FPE16dBXm+C2v1vdjEIOeolz1DWZTj0DKoMta45MQ796i2pYdC4VbH1amS91dX1/TgbkaEY68zJOlFiw6FmzUtItCJZqSzUgCJZqSzUgCWpYiXAtWQLcSwt9PGbbSNinTg6krIxJ2Vzc94Y0uPqtaSTqAxrgHl00uIWvkdiH4TnYh3rpr6a3BjEQPKfl1MB+Jxb1EvKoOEqOEI5MQt2uNoaPaeoLpOnz9aNGPr9EUJ6EXJndUsAjYyNuRjWtGwCxb0RewtY5gREQBERAFx9+l40Nf8qx3BVVgHCgWtlAyNkbn0BwxjWBYuwRZTad0YcU1Zn58upePdCAkOpXvaMj4vlw7WA3lDraFW+Y6r6pP+hk/hX6VRXrEPcU8wt5+afMtT9Vn/AEMv8KeZar6rP+hl/hX6WRZ9pe4ezreeG3DgfHCxsjHMcHOtY5pY4WnFaDjXqt7Lw2igJ0P6+W5cpfl87l2R+4Fe3BdbSw6g+ztuXkef5vHVp2zd/NHVUP8ARhHh5G+tqC9xtyA4hoWhZn9Y7V8Lg1pynUlKTu7m5BJRSR9NyjaFPLrMZyZzoVe3KNoUquBMUoAtJjkAAxknBOILawbyl62FdXYZ43H0jO03xWeNR9IztDxXCcQl6GTsO8E4hL0MnYd4Kz2iXw+Zjm1vO742zpGdoJxlnPb2guE4hL0MnYd4JxCXoZOw7wT2iXw+Y5tbzu+Ms57e0E4yznt7QXCcQl6GTsO8F8vo5Ggl0TwBlJY4AdZCe0S+H13DQW877jLOe3tBOMM57e0F59DC55DWNc5xyNALieoKT5oqPq0v6N3gpxq1JZxg3wu/kHBLadxxhnPb2goVddqGIHlB7szGkHHrIxBcp5oqPq0v6N3gpVJe3VSEWRFo5z+SB1HH3KX+4nlGm78H9CNorXIhTyyTy2kYT3kBrRuDQF6NcC5wp4Gx/SPKedLjl6hiHUo1wr3mU3KJw5bPXssDdIaM232K9Xa5NwDoXqVOk/D7vaatesp5R1BERdY1giIgCIiAIiwSgMrBK0S1Figz1mtAWL5wFHkrgFTT1utV81drQFRfVLhVUjtUfuhX97/zaLY/33LlbpyYUrjqb7F1V73zaL8/33LyNX+bqcX5nTj+HHsPuf1jtWtbKj1nLWuPU6b4m1HUZacY2hWHCt5yrlhWUa7p3yvcjKGkWPCt53enCt53eq9Fd7bL4UQ5lFhwrdKcK3nKNR0xkdgjEM50BW3mmOz6W8eC3sLSxOJjpwirb27X4Zet+spqOnTdmyEJBp71Cu/82l2N94KRNSmORoOMHIdI8VGu982l2N94KvSn70ais1dW7PX6ErLJplFei7Bq4zqk9wr0RlQCvMLiyYMzDqd7pXWwVutdzkX+Wf8AU/JGpiun2fU6cFZVPBWa1PhqbV1jWJKLANqygCIiAIiIAiIgCiVEqkvyKvqEBEqJlWVE6lVCq6hAR6idVlRUKRUKrqEBhz7TautvYnDoA3OxzgRqJLge87lw7JcF2PIcurWrO51c6F+G3GMjm5nDR/NeV5QpuhinN6pZ/Xx80dGjLSppbUdjVRm3CzZ9Sj2qRQ3QjmFrDjzsOJzdo+K2vgadWxc2rhtJ6UHrNiNS2TISLe6lOYg9y+DA7QtR0ai1xZapp7T4RfXBO5pX0IHaO9YVOb/K+4aS3ljcB4tkGexvXl8VdrmYIHNIcHWEZD/yrMV7rMgt0r1PJeMVGgqVVNNXttvdt7NuduvWc3EUnKelE+rqAHA0gk91n97Fzd81QGwFn0nkADUCCT3DepN1LssjtwnYUnMGXr5oXH11Y6V5e848wzNGgLQxuJU5yktvyVs+4upQ0UkYpHWOt1q4p6hUcRxqxp16Dk7DyoUFGWt5vt+2s0681Od0X1POrKnmVHTq0p1vFJd08qmAqrp1ZRZEB9oiIAiIgCIiAKJURKWsEICiqIVWVEC6mWntUCejQHJ1ECrainXXT0WpV81DqQHHz0y1RuLMRxt7wunmoNShS3P1KqtRp1oaFRXRKE3B3iV0UmQtOMZCMRHgrSlu/MzESHj8IY94+Nqgvucvk0zguFV5GqRd6M+x5Pv1PwNyOKi+kjo4b5mH143DYQ4fBSmXdpz9Mja13wC5ERO0FYwDoWo8LjI66bfc/JssVSk/zHZG7VP0o3O8FqkvggGRznbGn42LksA6FngjoWFQxcslTfan8yWnTX5i/nvnH0Iutxs7h4qsqrsTSYi/BHNbyRvy96iiB2hbG0Tirocl4up02orivJX8Wit4imtWZFJWWsLtisIrn6lNhoNS6+E5MpYdqXSlvezgtni+s1qmIlPLUiup6dWVPApsNDqU+Ci1LolBFp4FZ08K3wUepT4aaxAfFPEpgCAWLKAIiIAiIgCIiAIiIAsELKIDS+nBUeSgBU5EBTyXN1KLJc3UuiWCEByz7malodcvUuvLBoXzwDdCA411y9S+TcrUuy4s3QscVboQHHC5WpfQuVqXX8VboWeLN0IDk23L1Ley5mpdPwDdCyIxoQHPx3M1KVHc3UrgBZQECOgsUhlMAt6ID5DQF9IiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiA//9k=" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Learn Python:the Complete Python Programming Course</h5>
+              <a href="#" class="btn btn-primary">Rs.2,299</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xOEMdXVXJNveEe0Jl8J_1RQE14Uo0w0Z0Q&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Learn Python For Data Analysis and Visualization Ver 1</h5>
+              <a href="#" class="btn btn-primary">Rs.3,299</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKyMn7fJPAGJ0AbJyozYTmOi5n75SxnfmKd0O29-0ZuFddgGedIKXfyPgsgS_rr5gPz_M&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Python for Beginners -Learn Programming from scratch</h5>
+              <a href="#" class="btn btn-primary">Rs.2,999</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV3WkzALQ9Irwb_Hy_8nqpxpaN2wddv5tJog&usqp=CAU" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Python Beyond the Basics -Object-Oriented Programming</h5>
+              <a href="#" class="btn btn-primary">2,999</a>
+            </div>
+          </div>
+          
+       </div>
+
+        
+    </div>
+
+
+    <div class="body3">
+        <div class="infomation2">
+            <h4>How learner Like You achieving their goals</h4>
+        </div>
+
+
+        <div class="cards2">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="MicrosoftTeams-image.jpeg" alt="Card image cap">
+                
+              </div>
+
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="MicrosoftTeams-image(1).jpeg" alt="Card image cap">
+                
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="MicrosoftTeams-image(2).jpeg" alt="Card image cap">
+                
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="MicrosoftTeams-image(2).jpeg" alt="Card image cap">
+                
+              </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="body4">
+        <div class="infomation2">
+            <h4>Students are viewing</h4>
+        </div>
+<div class="cards3">
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuw77lb4jg3v72TDo2uu_jJr5kA9pU71UUhA&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeX8jzlI7dXiU7ISYRDHwop6XCS3vaWXksXw&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9fv4c2YwwcaXXbfTB8KVJjz_5y_kHWb1uuQ&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRIrlMtUmTMvHv4VJ53gATGKKSAPVFIYmypg&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+</div>
+
+        
+    </div>
+
+<div class="body6">
+<div class="header2">
+    <h4>Top Categories</h4>
+</div>
+<div class="cards4">
+
+   
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(4).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Design</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(5).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title "  style=" text-align: center;" >Development</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(6).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">Marketing</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(7).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">IT and Software</h5>
+        </div>
+      </div>
+      
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(8).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">Personal Development</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(9).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">Business</h5>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(4).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">Music</h5>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="MicrosoftTeams-image(5).jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"  style=" text-align: center;">Photography</h5>
+        </div>
+      </div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+    <div class="body5">
+        <div class="header3">
+            <h4>Featured topics by category</h4>
+        </div>
+        <div class="list3">
+
+            <ul>
+                <li  class="l1">Development</li>
+                <li>Python</li>
+                <li>Web Development</li>
+                <li>Machine Learning</li>
+                
+                <button type="button" class="btn btn-light">Explore More</button>    
+            </ul>
+            
+            <ul>
+                <li class="l1">Business</li>
+                <li>Financial Analysis</li>
+                <li>SQL</li>
+                <li>PMP</li>
+                
+            </ul>
+            <ul>
+                <li  class="l1">IT and Software</li>
+                <li>Aws Certification</li>
+                <li>Ethical Hacking</li>
+                <li>Cyber Security</li>
+                
+            </ul>
+            <ul>
+                <li  class="l1">Design</li>
+                <li>Photoshop</li>
+                <li>Graphic Design</li>
+                <li>Drawing</li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
